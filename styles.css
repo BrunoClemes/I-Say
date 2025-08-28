@@ -19,17 +19,17 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.875rem;
+  padding: 2rem;
   background: linear-gradient(135deg, #A78BFA, #C4B5FD);
-  margin-bottom: 1.563rem;
+  margin-bottom: 1.5rem;
   border: 3px solid #8B5CF6;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 .logo {
   background-color: #FFFFFF;
   border-radius: 50%;
-  margin-left: 0.938rem;
+  margin-left: 1rem;
   border: 3px solid #C4B5FD;
 }
 
@@ -41,7 +41,7 @@ img {
 }
 
 .name {
-  margin-left: 1.563rem;
+  margin-left: 1.5rem;
 }
 
 .name h1 {
@@ -53,14 +53,14 @@ img {
 
 h2 {
   color: #374151;
-  font-weight: 31.25rem;
+  font-weight: 500;
 }
 
 h3 {
   color: #374151; 
-  margin-left: 15.625rem;
-  font-size: 1.563rem;
-  font-weight: 37.5rem;
+  margin-left: 15rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 nav {
@@ -76,7 +76,7 @@ nav {
 ul {
   display: flex;
   flex-direction: row;
-  gap: 3.125rem;
+  gap: 3rem;
   list-style-type: none;
   align-items: center;
   text-align: center;
@@ -85,17 +85,16 @@ ul {
 .myButton {
   box-shadow: 3px 4px 0px 0px #D1D5DB;
   background: linear-gradient(to bottom, #FFFFFF 0%, #EDE9FE 100%);
-  border-radius: 0.938rem;
+  border-radius: 0.75rem;
   border: 2px solid #A78BFA;
-  display: inline-block;
   cursor: pointer;
   color: #374151;
   font-size: 1.25rem;
-  padding: 0.438rem  1.563rem;
+  padding: 0.5rem 1.5rem;
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-bottom: 0.188rem;
+  margin-bottom: 0.25rem;
   transition: all 0.3s ease;
 }
 
@@ -106,52 +105,52 @@ ul {
 
 .myButton:active {
   position: relative;
-  top: 0.063rem;
+  top: 0.1rem;
 }
 
 .myButton img {
-  width: 3.125rem;
-  margin-right: 0.625rem;
+  width: 3rem;
+  margin-right: 0.5rem;
 }
 
-.urgência {
+.urgencia {
   background: linear-gradient(135deg, #DDD6FE, #EDE9FE);
   display: flex;
   flex-direction: column;
   border: 3px solid #A78BFA;
-  margin-bottom: 1.563rem;
-  border-radius: 0.938rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
 }
 
-.urgência a {
-  display:flex;
+.urgencia a {
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.urgência img {
-  width: 6.25rem;
+.urgencia img {
+  width: 6rem;
 }
 
-.urgência h1 {
+.urgencia h1 {
   color: #374151;
-  margin-top: 0.188rem;
-  font-weight: 37.5rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
 }
 
 .busca {
   display: flex;
   flex-direction: column;
   border: 3px solid #A78BFA;
-  border-radius: 0.938rem;
+  border-radius: 0.75rem;
   margin-bottom: 1.25rem;
 }
 
 .busca h1 {
   color: #374151;
-  margin-top: 0.188rem;
-  font-weight: 37.5rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
 }
 
 main {
@@ -162,21 +161,25 @@ main {
   height: 100%;
 }
 
-.tipo{
+.tipo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-.tipo img{
-  width: 6.25rem;
+.tipo img {
+  width: 6rem;
 }
 
 main .botao {
   background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
   padding: 2rem 0;
-  border-radius: 0.938rem;
-  margin-bottom: 1.875rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
 }
 
 main .titulo {
@@ -184,31 +187,31 @@ main .titulo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   width: 100%;
   height: 7rem;
   border: 3px solid #8B5CF6;
-  border-radius: 15px;
+  border-radius: 0.9rem;
 }
 
 .titulo img {
-  width: 6.25rem;
-  margin-left: 0.625rem;
-  height: 6.25rem;
+  width: 6rem;
+  margin-left: 0.5rem;
+  height: 6rem;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
 
 .titulo h1 {
-  margin-left: 0.625rem;
+  margin-left: 0.5rem;
   color: #374151;
-  margin-top: 0.125rem;
-  font-size: 3.125;
-  font-weight:43.75rem;
+  margin-top: 0.1rem;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 main .myButton {
-  height: 9.375rem;
+  height: 9rem;
+  width: 9rem;
   background: linear-gradient(to bottom, #FFFFFF 0%, #EDE9FE 100%);
   margin-top: 1.25rem;
   display: flex;
@@ -223,14 +226,8 @@ main .myButton:hover {
   transform: translateY(-2px);
 }
 
-.myButton img {
-  margin-top: 0.625rem;
-}
-
-.botao {
-  align-items: center;
-  text-align: center;
- 
+main .myButton img {
+  margin-top: 0.5rem;
 }
 
 .botao a {
@@ -244,33 +241,60 @@ main .myButton:hover {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  align-items: center;
-  text-align: center;
-
 }
 
-.tipo{
-  font-size: 1.875rem;
-  margin-top: 1.563rem;
-  margin-bottom: 1.25rem;
-}
-
-#comidas{
+#comidas, #dor {
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  
 }
 
-#dor{
-    align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#comidas ul{
+#comidas ul {
   border-bottom: 2px solid #8B5CF6;
-  padding-bottom: 0.625rem;
+  padding-bottom: 0.5rem;
+}
+
+/* =================== RESPONSIVIDADE =================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .name {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h3 {
+    margin-left: 0;
+  }
+
+  .titulo {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .titulo img {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .titulo h1 {
+    font-size: 2rem;
+  }
+
+  .botao a {
+    width: 80%;
+    max-width: 18rem;
+  }
 }
