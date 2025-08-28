@@ -19,9 +19,9 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 30px 0;
+  padding: 1.875rem;
   background: linear-gradient(135deg, #A78BFA, #C4B5FD);
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
   border: 3px solid #8B5CF6;
   border-radius: 12px;
 }
@@ -29,7 +29,7 @@ header {
 .logo {
   background-color: #FFFFFF;
   border-radius: 50%;
-  margin-left: 15px;
+  margin-left: 0.938rem;
   border: 3px solid #C4B5FD;
 }
 
@@ -41,26 +41,26 @@ img {
 }
 
 .name {
-  margin-left: 25px;
+  margin-left: 1.563rem;
 }
 
 .name h1 {
   margin-bottom: 0;
   font-size: 2.5rem;
   color: #374151;
-  font-weight: 700; /* Mais destacado */
+  font-weight: 700; 
 }
 
 h2 {
-  color: #374151; /* Roxo pastel suave */
-  font-weight: 500;
+  color: #374151;
+  font-weight: 31.25rem;
 }
 
 h3 {
-  color: #374151; /* Roxo mais intenso */
-  margin-left: 250px;
-  font-size: 25px;
-  font-weight: 600;
+  color: #374151; 
+  margin-left: 15.625rem;
+  font-size: 1.563rem;
+  font-weight: 37.5rem;
 }
 
 nav {
@@ -69,15 +69,14 @@ nav {
   justify-content: center;
   background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  
+  gap: 3.125rem;
   list-style-type: none;
   align-items: center;
   text-align: center;
@@ -86,17 +85,17 @@ ul {
 .myButton {
   box-shadow: 3px 4px 0px 0px #D1D5DB;
   background: linear-gradient(to bottom, #FFFFFF 0%, #EDE9FE 100%);
-  border-radius: 15px;
+  border-radius: 0.938rem;
   border: 2px solid #A78BFA;
   display: inline-block;
   cursor: pointer;
   color: #374151;
-  font-size: 20px;
-  padding: 7px 25px;
+  font-size: 1.25rem;
+  padding: 0.438rem  1.563rem;
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-bottom: 3px;
+  margin-bottom: 0.188rem;
   transition: all 0.3s ease;
 }
 
@@ -107,12 +106,12 @@ ul {
 
 .myButton:active {
   position: relative;
-  top: 1px;
+  top: 0.063rem;
 }
 
 .myButton img {
-  width: 50px;
-  margin-right: 10px;
+  width: 3.125rem;
+  margin-right: 0.625rem;
 }
 
 .urgência {
@@ -120,8 +119,8 @@ ul {
   display: flex;
   flex-direction: column;
   border: 3px solid #A78BFA;
-  margin-bottom: 25px;
-  border-radius: 15px;
+  margin-bottom: 1.563rem;
+  border-radius: 0.938rem;
 }
 
 .urgência a {
@@ -132,27 +131,27 @@ ul {
 }
 
 .urgência img {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .urgência h1 {
   color: #374151;
-  margin-top: 3px;
-  font-weight: 600;
+  margin-top: 0.188rem;
+  font-weight: 37.5rem;
 }
 
 .busca {
   display: flex;
   flex-direction: column;
   border: 3px solid #A78BFA;
-  border-radius: 15px;
-  margin-bottom: 20px;
+  border-radius: 0.938rem;
+  margin-bottom: 1.25rem;
 }
 
 .busca h1 {
   color: #374151;
-  margin-top: 3px;
-  font-weight: 600;
+  margin-top: 0.188rem;
+  font-weight: 37.5rem;
 }
 
 main {
@@ -170,14 +169,14 @@ main {
 }
 
 .tipo img{
-  width: 100px;
+  width: 6.25rem;
 }
 
 main .botao {
   background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
   padding: 2rem 0;
-  border-radius: 15px;
-  margin-bottom: 30px;
+  border-radius: 0.938rem;
+  margin-bottom: 1.875rem;
 }
 
 main .titulo {
@@ -193,25 +192,25 @@ main .titulo {
 }
 
 .titulo img {
-  width: 100px;
-  margin-left: 10px;
-  height: 100px;
+  width: 6.25rem;
+  margin-left: 0.625rem;
+  height: 6.25rem;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
 
 .titulo h1 {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   color: #374151;
-  margin-top: 3px;
-  font-size: 50px;
-  font-weight: 700;
+  margin-top: 0.125rem;
+  font-size: 3.125;
+  font-weight:43.75rem;
 }
 
 main .myButton {
-  height: 150px;
+  height: 9.375rem;
   background: linear-gradient(to bottom, #FFFFFF 0%, #EDE9FE 100%);
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,7 +224,7 @@ main .myButton:hover {
 }
 
 .myButton img {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .botao {
@@ -238,7 +237,7 @@ main .myButton:hover {
   background: linear-gradient(135deg, #374151, #6B7280);
   height: 10rem;
   width: 12rem;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -251,9 +250,9 @@ main .myButton:hover {
 }
 
 .tipo{
-  font-size: 30px;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  font-size: 1.875rem;
+  margin-top: 1.563rem;
+  margin-bottom: 1.25rem;
 }
 
 #comidas{
@@ -273,5 +272,5 @@ main .myButton:hover {
 
 #comidas ul{
   border-bottom: 2px solid #8B5CF6;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
