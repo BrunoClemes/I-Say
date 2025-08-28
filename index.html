@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>I Say</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/img/Logo.png" alt="Logo I Say" />
+    </div>
+
+    <div class="name">
+      <h1>I SAY</h1>
+      <h2>"eu falo, você entende"</h2>
+    </div>
+
+    <h3>"Não ser capaz de falar não significa que não se tenha nada a dizer."</h3>
+  </header>
+
+
+  <nav class="urgência">
+
+    <h1>Acesso Rápido</h1>
+
+    <ul style="list-style: none;">
+      <li>
+        <a class="myButton" onclick="tocarAudio('audioFome')">
+          <audio id="audioFome" src="assets/audio/1754430513615684366rsl81f0t-voicemaker.in-speech.mp3"></audio>
+          <img src="assets/img/icons8-hunger-64.png" alt="fome" />
+          Fome
+         
+        </a>
+      </li>
+      <li>
+          <a class="myButton" onclick="tocarAudio('audioSede')">
+          <audio id="audioSede" src="assets/audio/175443150339289483b3cbx56-voicemaker.in-speech.mp3"></audio>
+          <img src="assets/img/icons8-água-64.png" alt="agua" />
+          Sede
+          
+        </a>
+      </li>
+      <li>
+         <a class="myButton" onclick="tocarAudio('audioDor')">
+          <audio id="audioDor" src="assets/audio/1754431731296269959wg6effdl-voicemaker.in-speech.mp3"></audio>
+          <img src="assets/img/icons8-dor-de-cabeça-64.png" alt="dores" />
+          Dor
+          
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <nav class="busca">
+    <h1>Busca</h1>
+    <ul style="list-style: none;">
+      <li>
+        <a href="#comidas" class="myButton">
+          <img src="assets/img/icons8-pizza-cinco-oitavos-100.png" alt="comida" /> Comidas
+        </a>
+      </li>
+      <li>
+        <a href="#" class="myButton">
+          <img src="assets/img/icons8-copo-com-canudo-48.png" alt="bebidas" /> Bebidas
+        </a>
+      </li>
+      <li>
+        <a href="#" class="myButton">
+          <img src="assets/img/icons8-pular-corda-48.png" alt="brincar" /> Brincadeiras
+        </a>
+      </li>
+      <li>
+        <a href="#dor" class="myButton">
+          <img src="assets/img/icons8-dor-de-cabeça-60.png" alt="dores" /> Dores
+        </a>
+      </li>
+      <li>
+        <a href="#" class="myButton">
+          <img src="assets/img/icons8-sorrindo-48.png" alt="sentimentos" /> Sentimentos
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <section class="botao" id="dor">
+
+      <div class="titulo">
+        <img src="assets/img/icons8-dor-de-cabeça-60.png" alt="dores" />
+        <h1>Dores</h1>
+      </div>
+
+      <div class="botoes">
+
+        <ul>
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioDorCabeca')">
+              <img src="assets/img/dores/icons8-dor-de-cabeça-96.png" alt="dor-cabeca" />
+              <audio id="audioDorCabeca" src="assets/audio/audio dores/1754597858770460321m4l4dm73-voicemaker.in-speech.mp3"></audio>
+              Dor de Cabeça
+            </a>
+          </li>
+
+            <li>
+            <a class="myButton" onclick="tocarAudio('audioDorDente')">
+              <img src="assets/img/dores/icons8-dor-de-dente-64.png" alt="dor-dente" />
+              <audio id="audioDorDente" src="assets/audio/audio dores/1755120594571751692jov0xz0p-voicemaker.in-speech.mp3"></audio>
+              Dor de Dente
+            </a>
+          </li>
+
+                      <li>
+            <a class="myButton" onclick="tocarAudio('audioDorEstomago')">
+              <img src="assets/img/dores/icons8-dor-de-estômago-96.png" alt="dor-estomago" />
+              <audio id="audioDorEstomago" src="assets/audio/audio dores/175512145188095645623x367wd-voicemaker.in-speech.mp3"></audio>
+              Dor de Estômago
+            </a>
+          </li>
+
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioDorCostas')">
+              <img src="assets/img/dores/icons8-feminino-de-volta-80.png" alt="dor-nas-costas" />
+              <audio id="audioDorCostas" src="assets/audio/audio dores/175512205966034605ja5329ei-voicemaker.in-speech.mp3"></audio>
+              Dor nas Costas
+            </a>
+          </li>
+
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioDorbraco')">
+              <img src="assets/img/dores/icons8-bíceps-flexionado-48.png" alt="dor-no-braco" />
+              <audio id="audioDorbraco" src="assets/audio/audio dores/1755122501455512432r9m01lo-voicemaker.in-speech.mp3"></audio>
+              Dor no braço
+            </a>
+          </li>
+
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioDorPerna')">
+              <img src="assets/img/dores/icons8-trauma-na-perna-96.png" alt="dor-na-Perna" />
+              <audio id="audioDorPerna" src="assets/audio/audio dores/1755204100984322667lryxvy-voicemaker.in-speech.mp3"></audio>
+              Dor na Perna
+            </a>
+          </li>
+
+          
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioDorPe')">
+              <img src="assets/img/dores/icons8-dor-no-pé-96.png" alt="dor-no-pe" />
+              <audio id="audioDorPe" src="assets/audio/audio dores/175520701791776599916eayfzq-voicemaker.in-speech.mp3"></audio>
+              Dor no pé
+            </a>
+          </li>
+
+           <li>
+            <a class="myButton" onclick="tocarAudio('audioDorOuvido')">
+              <img src="assets/img/dores/icons8-dor-de-ouvido-96.png" alt="dor-na-Perna" />
+              <audio id="audioDorOuvido" src="assets/audio/audio dores/1755206453458499118ssbrll6n-voicemaker.in-speech.mp3"></audio>
+              Dor de Ouvido
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      
+
+    </section>
+
+     <section class="botao" id="comidas">
+
+      <div class="titulo">
+        <img src="assets/img/icons8-pizza-cinco-oitavos-100.png" alt="Comidas" />
+        <h1>Comidas</h1> 
+      </div>
+
+      <div class="tipo">
+             <h1>Refeições Básicas</h1> 
+             <img src="assets/img/comidas/icons8-prato-de-sopa-96.png" alt="Refeições-Básicas" />
+      </div>
+   
+
+        <ul>
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioArroz')">
+              <img src="assets/img/comidas/icons8-arroz-50.png" alt="comer-arroz" />
+              <audio id="audioArroz" src="assets/audio/audio comidas/1755641281810288809smsoze8a-voicemaker.in-speech.mp3"></audio>
+              Arroz
+            </a>
+          </li>
+
+            <li>
+            <a class="myButton" onclick="tocarAudio('audioFeijao')">
+              <img src="assets/img/comidas/icons8-bean-60.png" alt="comer-feijao" />
+              <audio id="audioFeijao" src="assets/audio/audio comidas/1755641692760480476bfay9w-voicemaker.in-speech.mp3"></audio>
+              Feijão
+            </a>
+          </li>
+
+            <li>
+            <a class="myButton" onclick="tocarAudio('audioCarne')">
+              <img src="assets/img/comidas/icons8-carne-48.png" alt="comer-carne" />
+              <audio id="audioCarne" src="assets/audio/audio comidas/17556420342213086633o4fu85-voicemaker.in-speech.mp3"></audio>
+              Carne
+            </a>
+          </li>
+
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioMacarrão')">
+              <img src="assets/img/comidas/icons8-macarrão-48.png" alt="Comer-macarrao" />
+              <audio id="audioMacarrão" src="assets/audio/audio comidas/1755807543606681919m25xyqun-voicemaker.in-speech.mp3"></audio>
+              Macarrão
+            </a>
+          </li>
+
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioSopa')">
+              <img src="assets/img/comidas/icons8-sopa-100.png" alt="comer-sopa" />
+              <audio id="audioSopa" src="assets/audio/audio comidas/17558078440774478998p3yu0p-voicemaker.in-speech.mp3"></audio>
+              Sopa
+            </a>
+          </li>
+
+          
+          <li>
+            <a class="myButton" onclick="tocarAudio('audioOvos')">
+              <img src="assets/img/comidas/icons8-ovos-100 (1).png" alt="comer-ovo" />
+              <audio id="audioOvos" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-17-50-52.mp3"></audio>
+              Ovo
+            </a>
+          </li>
+          
+          
+        </ul>
+
+        <div class="tipo">
+             <h1>Lanches rápidos</h1>
+             <img src="assets/img/comidas/icons8-sanduíche-100.png" alt="Lanches-rápidos" />
+
+        </div>
+
+        <ul>
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioPão')">
+              <img src="assets/img/comidas/icons8-pão-50.png" alt="comer-pao" />
+              <audio id="audioPão" src="assets/audio/audio comidas/175581020218928153dbcuef7-voicemaker.in-speech.mp3"></audio>
+             Pão
+            </a>
+
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioSanduíche')">
+              <img src="assets/img/comidas/icons8-sanduíche-64.png" alt="comer-sanduiche" />
+              <audio id="audioSanduíche" src="assets/audio/audio comidas/1755810488119707111de60h2ri-voicemaker.in-speech.mp3"></audio>
+              Sanduíche
+            </a>
+
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioBiscoito')">
+              <img src="assets/img/comidas/icons8-biscoito-50.png" alt="comer-biscoito" />
+              <audio id="audioBiscoito" src="assets/audio/audio comidas/1755810998252973547cm1y0tm-voicemaker.in-speech.mp3"></audio>
+              Biscoito
+            </a>
+
+          </li>
+
+             <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioPizza')">
+              <img src="assets/img/comidas/icons8-pizza-48.png" alt="comer-pizza" />
+              <audio id="audioPizza" src="assets/audio/audio comidas/1755811843204731753wsay9bg4-voicemaker.in-speech.mp3"></audio>
+              Pizza
+            </a>
+
+          </li>
+
+                       <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioHamburguer')">
+              <img src="assets/img/comidas/icons8-hambúrguer-50.png" alt="comer-hamburguer" />
+              <audio id="audioHamburguer" src="assets/audio/audio comidas/1756067055029198118pxlgxtrt-voicemaker.in-speech.mp3"></audio>
+              Hambúrguer
+            </a>
+
+          </li>
+
+
+        </ul>
+
+      
+        <div class="tipo">
+             <h1>Frutas</h1><img src="assets/img/comidas/icons8-maçãs-prato-1-96.png" alt="Frutas" />
+        </div>
+
+        <ul>
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioMaca')">
+              <img src="assets/img/comidas/icons8-maçã-48.png" alt="comer-maçã" />
+              <audio id="audioMaca" src="assets/audio/audio comidas/1756068445755218643ks9xuztf-voicemaker.in-speech.mp3"></audio>
+                Maçã
+            </a>
+          </li>
+
+                    <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioBanana')">
+              <img src="assets/img/comidas/icons8-banana-48.png" alt="comer-banana" />
+              <audio id="audioBanana" src="assets/audio/audio comidas/17560687240135606161h6xj5nm-voicemaker.in-speech.mp3"></audio>
+                Banana
+            </a>
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioLaranja')">
+              <img src="assets/img/comidas/icons8-laranja-96.png" alt="dor-no-braco" />
+              <audio id="audioLaranja" src="assets/audio/audio comidas/175606889746452690338nn40cf-voicemaker.in-speech.mp3"></audio>
+               Laranja
+            </a>
+          </li>
+
+          
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioUva')">
+              <img src="assets/img/comidas/icons8-uva-64.png" alt="comer-uva" />
+              <audio id="audioUva" src="assets/audio/audio comidas/17560690178527404837vnipeqs-voicemaker.in-speech.mp3"></audio>
+               Uva
+            </a>
+          </li>
+
+                    <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioMelancia')">
+              <img src="assets/img/comidas/icons8-melancia-50.png" alt="comer-melancia" />
+              <audio id="audioMelancia" src="assets/audio/audio comidas/17560693702177681904fqere0f-voicemaker.in-speech.mp3"></audio>
+               Melancia
+            </a>
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioMorango')">
+              <img src="assets/img/comidas/icons8-morango-96.png" alt="comer-morango" />
+              <audio id="audioMorango" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-18-7-14.mp3"></audio>
+               Morango
+            </a>
+          </li>
+      </ul>
+
+      <div class="tipo">
+          <h1>Doces e sobremesas</h1><img src="assets/img/comidas/icons8-chocolate-96.png" alt="Doces e sobremesas" />
+      </div>
+
+        <ul>
+                    
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioBolo')">
+              <img src="assets/img/comidas/icons8-bolo-50.png" alt="comer-bolo" />
+              <audio id="audioBolo" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-18-14-30.mp3"></audio>
+               Bolo
+            </a>
+
+          </li>
+
+        <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioSorvete')">
+              <img src="assets/img/comidas/icons8-sorvete-96.png" alt="comer-sorvete" />
+              <audio id="audioSorvete" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-18-17-6.mp3"></audio>
+               Sorvete
+            </a>
+          </li>
+
+        </li>
+
+        <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioChocolate')">
+              <img src="assets/img/comidas/icons8-chocolate-48.png" alt="comer-chocolate" />
+              <audio id="audioChocolate" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-18-18-11.mp3"></audio>
+               Chocolate
+            </a>
+        </li>
+
+        <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioPudim')">
+              <img src="assets/img/comidas/icons8-pudim-externo-natal-vitaliy-gorbachev-flat-vitaly-gorbachev-58.png" alt="comer-pudim" />
+              <audio id="audioPudim" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-18-19-6.mp3"></audio>
+               Pudim
+            </a>
+        </li>
+
+        <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioGelatina')">
+              <img src="assets/img/comidas/icons8-gelatina-96.png" alt="comer-gelatina" />
+              <audio id="audioGelatina" src="assets/audio/audio comidas/ttsmaker-file-2025-8-27-18-22-42.mp3"></audio>
+               Gelatina
+            </a>
+        </li>
+      </ul>
+
+       
+
+      <div class="titulo">
+        <img src="assets/img/icons8-pizza-cinco-oitavos-100.png" alt="bebidas" />
+        <h1>Bebidas</h1> 
+      </div>
+
+
+
+  
+    </section>
+
+    
+  </main>
+<script src="index.js"></script>
+
+</body>
+
+</html>
