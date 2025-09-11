@@ -21,10 +21,33 @@
     </div>
 
     <h3>"Não ser capaz de falar não significa que não se tenha nada a dizer."</h3>
+    
+    <div class="botaoMoldal">
+
+    <button id="abrirMoldal">O que é I SAY</button>
+
+    </div>
+
+    <dialog id="modal">
+    <h2>O que é o I SAY?</h2>
+<p>
+  O <strong>I SAY</strong> é um aplicativo criado para ajudar pessoas com dificuldade na fala a se comunicarem de forma rápida e simples.
+</p>
+<p>
+  Através de botões com imagens e áudios, o usuário pode expressar necessidades, sentimentos e desejos, permitindo que seja compreendido com mais facilidade.
+</p>
+<p>
+  Afinal, <em>não ser capaz de falar não significa que não se tenha nada a dizer.</em>
+</p>
+    <button id="closeModal">Fechar</button>
+    </dialog>
+
+     
+
   </header>
 
 
-  <nav class="urgência">
+  <nav class="urgencia">
 
     <h1>Acesso Rápido</h1>
 
@@ -66,13 +89,13 @@
         </a>
       </li>
       <li>
-        <a href="#" class="myButton">
-          <img src="assets/img/icons8-copo-com-canudo-48.png" alt="bebidas" /> Bebidas
+        <a href="#bebidas" class="myButton">
+          <img src="assets/img/icons8-copo-com-canudo-48.png" alt="bebida" /> Bebidas
         </a>
       </li>
       <li>
-        <a href="#" class="myButton">
-          <img src="assets/img/icons8-pular-corda-48.png" alt="brincar" /> Brincadeiras
+        <a href="#brincadeiras" class="myButton">
+          <img src="assets/img/icons8-pular-corda-48.png" alt="brincadeiras" /> Brincadeiras
         </a>
       </li>
       <li>
@@ -81,7 +104,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="myButton">
+        <a href="#sentimentos" class="myButton">
           <img src="assets/img/icons8-sorrindo-48.png" alt="sentimentos" /> Sentimentos
         </a>
       </li>
@@ -116,7 +139,7 @@
             </a>
           </li>
 
-                      <li>
+             <li>
             <a class="myButton" onclick="tocarAudio('audioDorEstomago')">
               <img src="assets/img/dores/icons8-dor-de-estômago-96.png" alt="dor-estomago" />
               <audio id="audioDorEstomago" src="assets/audio/audio dores/175512145188095645623x367wd-voicemaker.in-speech.mp3"></audio>
@@ -286,7 +309,7 @@
 
           </li>
 
-                       <li>
+           <li>
                 
             <a class="myButton" onclick="tocarAudio('audioHamburguer')">
               <img src="assets/img/comidas/icons8-hambúrguer-50.png" alt="comer-hamburguer" />
@@ -416,22 +439,230 @@
         </li>
       </ul>
 
-       
+      </section>
+
+       <section class="botao" id="bebidas">
 
       <div class="titulo">
-        <img src="assets/img/icons8-pizza-cinco-oitavos-100.png" alt="bebidas" />
+        <img src="assets/img/icons8-copo-com-canudo-48.png" alt="bebidas" />
         <h1>Bebidas</h1> 
       </div>
 
+      <ul>
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioagua')">
+              <img src="assets/img/bebidas/icons8-água-64 (1).png" alt="beber-agua" />
+              <audio id="audioagua" src="assets/audio/audio bebidas/ttsmaker-file-2025-9-2-10-50-11.mp3"></audio>
+                agua
+            </a>
+          </li>
 
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioSuco')">
+              <img src="assets/img/bebidas/icons8-suco-64.png" alt="beber-suco" />
+              <audio id="audioSuco" src="assets/audio/audio bebidas/ttsmaker-file-2025-9-2-10-55-0.mp3"></audio>
+                Suco
+            </a>
+          </li>
 
-  
+            <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioRefrigerante')">
+              <img src="assets/img/bebidas/icons8-coke-96.png" alt="beber-Refrigerante" />
+              <audio id="audioRefrigerante" src="assets/audio/audio bebidas/ttsmaker-file-2025-9-2-11-5-29.mp3"></audio>
+                Suco
+            </a>
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audiocafe')">
+              <img src="assets/img/bebidas/icons8-café-64.png" alt="beber-cafe" />
+              <audio id="audiocafe" src="assets/audio/audio bebidas/ttsmaker-file-2025-9-2-11-14-12.mp3"></audio>
+                Café
+            </a>
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioLeite')">
+              <img src="assets/img/bebidas/icons8-leite-64.png" alt="beber-cafe" />
+              <audio id="audioLeite" src="assets/audio/audio bebidas/ttsmaker-file-2025-9-2-11-44-17.mp3"></audio>
+                Leite
+            </a>
+          </li>
+        </ul>
     </section>
 
-    
-  </main>
-<script src="index.js"></script>
+    <section class="botao" id="brincadeiras">
 
-</body>
+      <div class="titulo">
+        <img src="assets/img/icons8-pular-corda-48.png" alt="brincadeiras" />
+        <h1>Brincadeiras</h1> 
+      </div>
+
+       <ul>
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audiopegapega')">
+              <img src="assets/img/brincadeiras/icons8-perseguir-48.png" alt="pega-pega" />
+              <audio id="audiopegapega" src="assets/audio/audio brincadeiras/ttsmaker-file-2025-9-2-14-11-21.mp3"></audio>
+                Pega Pega
+            </a>
+          </li>
+
+                    <li>
+                
+            <a class="myButton" onclick="tocarAudio('audiopularcorda')">
+              <img src="assets/img/brincadeiras/icons8-pular-corda-96.png" alt="pular-corda" />
+              <audio id="audiopularcorda" src="assets/audio/audio brincadeiras/ttsmaker-file-2025-9-2-14-18-7.mp3"></audio>
+                Pular Corda
+            </a>
+          </li>
+
+          
+                    <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioJogarBola')">
+              <img src="assets/img/brincadeiras/icons8-bola-de-futebol-2-94.png" alt="jogar-bola" />
+              <audio id="audioJogarBola" src="assets/audio/audio brincadeiras/ttsmaker-file-2025-9-2-14-34-8.mp3"></audio>
+                Jogar Bola
+            </a>
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioEscondeEsconde')">
+              <img src="assets/img/brincadeiras/icons8-behind-60.png" alt="esconde-esconde" />
+              <audio id="audioEscondeEsconde" src="assets/audio/audio brincadeiras/ttsmaker-file-2025-9-2-14-46-13.mp3"></audio>
+                Esconde Esconde
+            </a>
+          </li>
+
+            <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioCarrinho')">
+              <img src="assets/img/brincadeiras/icons8-carro-64.png" alt="carrinho" />
+              <audio id="audioCarrinho" src="assets/audio/audio brincadeiras/ttsmaker-file-2025-9-3-17-10-56.mp3"></audio>
+                Carrinho
+            </a>
+          </li>
+            <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioBoneca')">
+              <img src="assets/img/brincadeiras/icons8-boneca-96.png" alt="boneca" />
+              <audio id="audioBoneca" src="assets/audio/audio brincadeiras/ttsmaker-file-2025-9-3-17-14-13.mp3"></audio>
+                Boneca
+            </a>
+          </li>
+
+        </ul>
+
+
+      </section>
+
+      <section class="botao" id="sentimentos">
+
+        <div class="titulo">
+        <img src="assets/img/icons8-sorrindo-48.png" alt="sentimentos" />
+        <h1>Sentimentos</h1> 
+      </div>
+
+       <ul>
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioFeliz')">
+              <img src="assets/img/sentimentos/icons8-rosto-sorridente-48.png" alt="feliz" />
+              <audio id="audioFeliz" src="assets/audio/audio sentimentos/ttsmaker-file-2025-9-3-17-49-22.mp3"></audio>
+                Feliz
+            </a>
+          </li>
+
+          <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioTriste')">
+              <img src="assets/img/sentimentos/icons8-cara-de-choro-96.png" alt="Triste" />
+              <audio id="audioTriste" src="assets/audio/audio sentimentos/ttsmaker-file-2025-9-3-17-53-18.mp3"></audio>
+                Triste
+            </a>
+          </li>
+
+                    <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioPreocupado')">
+              <img src="assets/img/sentimentos/icons8-cara-preocupada-96 (1).png" alt="Preocupado" />
+              <audio id="audioPreocupado" src="assets/audio/audio sentimentos/ttsmaker-file-2025-9-3-17-57-5.mp3"></audio>
+                Preocupado
+            </a>
+          </li>
+
+                              <li>
+                
+            <a class="myButton" onclick="tocarAudio('audioRaiva')">
+              <img src="assets/img/sentimentos/icons8-angry-face-96.png" alt="Raiva" />
+              <audio id="audioRaiva" src="assets/audio/audio sentimentos/ttsmaker-file-2025-9-3-18-4-16.mp3"></audio>
+                Raiva
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+      
+    </main>
+    <footer>
+        <section class="social" >
+
+          <div class="facebook">
+
+            <a class="mediaSocial" href="#" target="_blank">
+              <img src="assets/img/social/icons8-facebook-novo-96.png" alt="facebook" />
+            </a>
+
+
+          </div>
+          
+          <div class="instagram">
+
+            <a class="mediaSocial" href="#" target="_blank">
+              <img src="assets/img/social/icons8-instagram-logo-94.png" alt="instagram" />
+            </a>
+
+
+          </div>
+
+          <div class="logoFoder">
+               <img src="assets/img/Logo.png" alt="Logo I Say" />
+            </div>
+
+            <div class="github">
+
+              <a class="mediaSocial" href="#" target="_blank">
+              <img src="assets/img/social/icons8-github-64 (1).png" alt="github" />
+            </a>
+
+          </div>
+
+            <div class="linkedin">
+
+              <a class="mediaSocial" href="#" target="_blank">
+              <img src="assets/img/social/icons8-linkedin-96 (1).png" alt="linkedin" />
+            </a>
+
+          </div>
+
+          
+
+        </section>
+  
+    </footer>
+
+
+
+    
+  </body>
+  <script src="index.js"></script>
 
 </html>

@@ -6,9 +6,9 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh; /* agora pode crescer */
   background: linear-gradient(160deg, #F3F4F6 0%, #FFFFFF 100%);
-  color: #374151; /* Cinza escuro para textos */
+  color: #374151;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,7 @@ img {
   margin-bottom: 0;
   font-size: 2.5rem;
   color: #374151;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 h2 {
@@ -57,10 +57,71 @@ h2 {
 }
 
 h3 {
-  color: #374151; 
+  color: #374151;
   margin-left: 15rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.botaoMoldal {
+  margin: 25px;
+  margin-top: 11rem;
+}
+
+#abrirMoldal {
+  box-shadow: 3px 4px 0px 0px #D1D5DB;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #EDE9FE 100%);
+  border-radius: 0.75rem;
+  border: 2px solid #A78BFA;
+  cursor: pointer;
+  color: #374151;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  transition: all 0.3s ease;
+}
+#abrirMoldal:hover {
+  background: linear-gradient(to bottom, #C4B5FD 0%, #A78BFA 100%);
+  transform: translateY(-2px);
+}
+
+#abrirMoldal:active {
+  position: relative;
+  top: 0.1rem;
+}
+
+dialog {
+  border: none;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  border: 5px solid #8B5CF6;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.6); /* fundo escuro atrás do modal */
+}
+
+#closeModal {
+  background:#8B5CF6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 nav {
@@ -124,7 +185,7 @@ ul {
 
 .urgencia a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
 }
@@ -158,7 +219,6 @@ main {
   flex-direction: column;
   margin-top: 5rem;
   width: 100%;
-  height: 100%;
 }
 
 .tipo {
@@ -243,58 +303,122 @@ main .myButton img {
   text-decoration: none;
 }
 
-#comidas, #dor {
+#comidas,
+#dor,
+#bebidas,
+#brincadeiras,
+#sentimentos {
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-#comidas ul {
-  border-bottom: 2px solid #8B5CF6;
-  padding-bottom: 0.5rem;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* empurra para o fim */
+  background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+  border-top: 2px solid #8B5CF6;
+  border-radius: 0.75rem 0.75rem 0 0;
+  color: #374151;
+  font-weight: 500;
 }
 
-/* =================== RESPONSIVIDADE =================== */
-@media (max-width: 768px) {
+footer .social {
+  display: flex;
+  flex-direction: row;
+  gap:10px
+}
+
+footer .logoFoder {
+  width: 30%;
+}
+
+footer a {
+  display: flex;
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 18px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #374151, #6B7280);
+  border-bottom: 2px solid #8B5CF6;
+}
+footer a:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+  background: linear-gradient(to bottom, #C4B5FD 0%, #A78BFA 100%);
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
   header {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 1rem;
   }
 
-  .name {
-    margin-left: 0;
-    margin-top: 1rem;
+  h1 {
+    margin-left: 150px;
   }
 
-  ul {
-    flex-direction: column;
-    gap: 1rem;
+  h2 {
+    color: #374151;
+    font-weight: 500;
+    height: 50px;
   }
 
   h3 {
-    margin-left: 0;
+    color: #374151;
+    margin-left: 0rem;
   }
 
-  .titulo {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-    text-align: center;
+  .botaoMoldal {
+    margin: 25px;
+    margin-top: 6rem;
   }
 
-  .titulo img {
-    margin-left: 0;
-    margin-bottom: 0.5rem;
+  #abrirMoldal {
+    box-shadow: 3px 4px 0px 0px #D1D5DB;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #EDE9FE 100%);
+    border-radius: 0.75rem;
+    border: 2px solid #A78BFA;
+    cursor: pointer;
+    color: #374151;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+    transition: all 0.3s ease;
   }
 
-  .titulo h1 {
-    font-size: 2rem;
-  }
-
-  .botao a {
-    width: 80%;
-    max-width: 18rem;
+  dialog {
+    width: 25%;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
   }
 }
