@@ -417,9 +417,9 @@ footer a:hover {
   }
 
   dialog {
-    width: 25%;
+    width: 80%;
     top: 50%;
-    left: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -442,7 +442,7 @@ ul {
 .busca a{
 flex-direction: column;
 width: 9rem;
-flex-wrap: nowrap;
+
 }
 
 .tipo h1{
