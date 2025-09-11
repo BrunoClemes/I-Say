@@ -441,7 +441,7 @@ ul {
 
 .busca a{
 flex-direction: column;
-width: 80px;
+width: 9rem;
 flex-wrap: nowrap;
 }
 
@@ -490,8 +490,5 @@ footer .logoFoder{
   width: 5rem;
 }
 
-
-
-  
 }
 
